@@ -3,13 +3,14 @@ import axios from 'axios'
 jest.mock('axios');
 const jsonFlickrFeed = jest.fn();
 
-test('should fetch feeds', async () => {
+test('should fetch feeds by axios get', async () => {
     const tagsString = "beach,sun,water";
     const response = { data: responseData };
     axios.get.mockResolvedValue(response);
     return Feeds.byTags(tagStrings).then(data => expect(data).toEqual(responseData));
 
 });
+
 
 const tagStrings = "beach,sun,sand";
 const responseData = jsonFlickrFeed(
