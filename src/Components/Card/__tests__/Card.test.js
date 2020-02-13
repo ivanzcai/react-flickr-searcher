@@ -23,8 +23,8 @@ test("render <Card /> with props", () => {
 
 
 const cardInfo = {
-    thumbnail: "https://live.staticflickr.com/65535/49524078366_0175a57a0a_m.jpg",
-    full_image: "https://live.staticflickr.com/65535/49524078366_0175a57a0a_m.jpg",
+    thumbnail_link: "https://live.staticflickr.com/65535/49524078366_0175a57a0a_m.jpg",
+    full_image_link: "https://live.staticflickr.com/65535/49524078366_0175a57a0a_m.jpg",
     details: {
         author: "john",
         date: "2017/11/02"
