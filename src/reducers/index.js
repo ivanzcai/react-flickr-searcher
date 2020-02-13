@@ -1,5 +1,6 @@
+import { transformer } from '../services/transformer'
 const initState = {
-    search: ""
+    cardItems: ""
 };
 
 export default function (state = initState, action) {
@@ -10,10 +11,12 @@ export default function (state = initState, action) {
 
     switch (action.type) {
         case "SEARCH_SUCCESS":
-            return { ...state, search: action.payload };
+            let results = transformer(action.payload.items);
+
+            return { ...state, cardItems: results };
 
         case "SEARCH_FAILED":
-            return { ...state, search: action.payload };
+            return { ...state, cardItems: results };
 
         default:
             return state;
