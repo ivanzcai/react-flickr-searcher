@@ -3,7 +3,7 @@ import React from 'react'
 
 function Thumbnail() {
     return (
-        <div className="Thumbnail">
+        <div className="thumbnail">
 
         </div>
     );

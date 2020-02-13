@@ -4,7 +4,7 @@ import Details from './Details';
 import Tags from './Tags';
 
 
-function Card() {
+function Card(cardInfo) {
     return (
         <div className="card">
             <Thumbnail />

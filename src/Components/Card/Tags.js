@@ -3,7 +3,7 @@ import React from 'react'
 
 function Tags() {
     return (
-        <div className="Tags">
+        <div className="tags">
 
         </div>
     );
