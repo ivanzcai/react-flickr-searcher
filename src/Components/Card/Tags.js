@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Tags.js'
 
 function Tags({ tags }) {
 

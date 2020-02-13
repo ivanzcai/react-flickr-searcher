@@ -10,6 +10,7 @@ test("render <Thumbnail /> component", () => {
 
 test("render <Thumbnail /> component", () => {
     const thumbnail_link = "https://test.jpg"
-    const wrapper = shallow(<Thumbnail thumbnail_link={thumbnail_link} />);
-    expect(wrapper.contains(<img width="100%" height="225" src="https://test.jpg" />)).toEqual(true);
+    const full_image_link = "https://testlarge"
+    const wrapper = shallow(<Thumbnail thumbnail_link={thumbnail_link} full_image_link={full_image_link} />);
+    expect(wrapper.contains(<img width="100%" height="225" src="https://test.jpg" onClick={() => window.open("https://testlarge", "_blank")} />)).toEqual(true);
 });
