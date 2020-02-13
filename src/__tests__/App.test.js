@@ -1,9 +1,9 @@
 import React from "react";
 import { shallow, mount, render } from 'enzyme';
-import App from "./App";
-import TopNav from "./Components/TopNav";
-import Search from "./Components/Search";
-import Cards from "./Components/Cards";
+import App from "../App";
+import TopNav from "../Components/TopNav";
+import Search from "../Components/Search";
+import Cards from "../Components/Cards";
 
 
 test("renders <App />", () => {
