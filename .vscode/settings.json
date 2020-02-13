@@ -1,0 +1,5 @@
+{
+    "html.format.wrapLineLength": 0,
+    "html.format.wrapAttributes": "auto",
+    "editor.formatOnSave": true
+}
