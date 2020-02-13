@@ -8,17 +8,13 @@ export default function (state = initState, action) {
         return state;
     }
 
-    let count
-
     switch (action.type) {
         case "SEARCH":
-            console.log("search action")
-            return { ...state };
+            return { ...state, search: action.payload };
 
 
         default:
             return state;
             break;
     }
-
 }

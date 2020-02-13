@@ -1,7 +1,6 @@
 import Feeds from '../feeds'
 import axios from 'axios'
 jest.mock('axios');
-const jsonFlickrFeed = jest.fn();
 
 test('should fetch feeds by axios get', async () => {
     const tagsString = "beach,sun,water";

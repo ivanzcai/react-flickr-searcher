@@ -5,6 +5,8 @@ import TopNav from "../Components/TopNav";
 import Search from "../Components/Search";
 import Cards from "../Components/Cards";
 
+jest.mock('react-redux');
+const useDispatch = jest.fn();
 
 test("renders <App />", () => {
   const wrapper = render(<App />);
