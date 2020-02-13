@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "../Cards";
+import { Cards } from "../Cards";
 import Card from "../Card";
 import { shallow, mount, render } from 'enzyme';
 
@@ -8,11 +8,11 @@ test("render <Cards /> component", () => {
 });
 
 test("render multiple <Card> in <Cards /> component", () => {
-    const wrapper = shallow(<Cards cardList={cardList} />);
+    const wrapper = shallow(<Cards cardItems={cardItems} />);
     expect(wrapper.find(Card)).toHaveLength(2);
 });
 
-const cardList = [
+const cardItems = [
     {
         thumbnail_link: "https://test.com/1.jpg",
         full_image_link: "https://test.com/2",
