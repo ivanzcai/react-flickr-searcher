@@ -12,8 +12,4 @@ class Feeds {
 }
 
 
-
-
-
-
 export default Feeds;

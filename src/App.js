@@ -22,7 +22,6 @@ function App() {
       <TopNav />
       <Search />
       <Cards />
-      {JSON.stringify(data)}
     </div>
   );
 }
