@@ -1,9 +1,12 @@
-export function transformer(response) {
+export function transformer(items) {
+    let resultList = []
+    resultList = items.map(item => transformItem(item));
+    return resultList;
 
-    return mockResults;
+
 }
 
-export function tranformItem(item) {
+export function transformItem(item) {
 
     let result = {
         details: {
@@ -21,24 +24,3 @@ export function tranformItem(item) {
 
 
 }
-
-let mockResults = [
-    {
-        thumbnail_link: "https://test.com/1.jpg",
-        full_image_link: "https://test.com/2",
-        details: {
-            author: "ivan",
-            date: "2020-01-25"
-        },
-        tags: ["sea", "beach", "sun", "bondi"]
-    },
-    {
-        thumbnail_link: "https://test2.com/1.jpg",
-        full_image_link: "https://test2.com/2",
-        details: {
-            author: "john",
-            date: "2020-02-25"
-        },
-        tags: ["moon", "bat", "dark"]
-    },
-]

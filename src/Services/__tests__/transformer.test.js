@@ -1,8 +1,21 @@
-import { transformer, tranformItem } from '../transformer'
+import { transformer, transformItem } from '../transformer'
 
 test('return expected data using data transformItem function ', () => {
 
-    expect(tranformItem(inputData[0])).toEqual(expectResult[0])
+    expect(transformItem(inputData[0])).toEqual(expectResult[0])
+
+});
+
+test('return expected data using data transformItem function 2', () => {
+
+    expect(transformItem(inputData[1])).toEqual(expectResult[1])
+
+});
+
+
+test('return expected data using data transformer function ', () => {
+
+    expect(transformer(inputData)).toEqual(expectResult)
 
 });
 
