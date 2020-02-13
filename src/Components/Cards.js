@@ -9,4 +9,4 @@ function Cards() {
     );
 }
 
-export default Search;
+export default Cards;
