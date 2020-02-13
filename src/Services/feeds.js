@@ -4,7 +4,7 @@ const endpoint = "https://cors-anywhere.herokuapp.com/https://www.flickr.com/ser
 // const tagsString = "beach,sun,water"
 class Feeds {
     static byTags(tagsString) {
-        const cleanTags = tagsString.replace(/[ ,]+/g, ",");
+        const cleanTags = tagsString.replace(/[ ,;]+/g, ",");
         return axios.get(`${endpoint}?tags=${cleanTags}&format=json&nojsoncallback=true`)
             .then(response => {
                 return response.data
