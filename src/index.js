@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import createSagaMiddleware from 'redux-saga'
 import reducer from './reducers'
 import rootSaga from './sagas/rootSaga'
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const sagaMiddleware = createSagaMiddleware()
 const middlewares = [sagaMiddleware];
