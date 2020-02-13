@@ -1,9 +1,19 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { shallow, mount, render } from 'enzyme';
 import App from "./App";
+import TopNav from "./Components/TopNav";
+import Search from "./Components/Search";
+import Cards from "./Components/Cards";
 
-test("renders learn react link", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+test("renders <App />", () => {
+  const wrapper = render(<App />);
+});
+
+
+test("renders <TopNav /> <Search /> <Cards /> in <App /> ", () => {
+  const wrapper = shallow(<App />);
+  expect(wrapper.contains(<TopNav />)).toEqual(true);
+  expect(wrapper.contains(<Search />)).toEqual(true);
+  expect(wrapper.contains(<Cards />)).toEqual(true);
 });
