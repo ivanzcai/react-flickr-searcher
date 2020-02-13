@@ -9,9 +9,11 @@ export default function (state = initState, action) {
     }
 
     switch (action.type) {
-        case "SEARCH":
+        case "SEARCH_SUCCESS":
             return { ...state, search: action.payload };
 
+        case "SEARCH_FAILED":
+            return { ...state, search: action.payload };
 
         default:
             return state;
