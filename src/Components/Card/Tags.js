@@ -2,9 +2,6 @@ import React from 'react'
 
 
 function Tags({ tags }) {
-    // console.log("TAGS:", tags)
-    // console.log(typeof tags);
-    // const tags = ["sea", "beach", "sun", "bondi"];
 
     return (
         <div className="tags">

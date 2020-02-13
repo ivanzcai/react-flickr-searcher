@@ -19,6 +19,9 @@ test("render <Thumbnail /> ,<Details /> <Tags /> in  <Card /> component", () => 
 
 test("render <Card /> with props", () => {
     const wrapper = shallow(<Card cardInfo={cardInfo} />);
+    expect(wrapper.contains(<Thumbnail thumbnail_link={cardInfo.thumbnail_link} />)).toEqual(true);
+    expect(wrapper.contains(<Details details={cardInfo.details} />)).toEqual(true);
+    expect(wrapper.contains(<Tags tags={cardInfo.tags} />)).toEqual(true);
 });
 
 
