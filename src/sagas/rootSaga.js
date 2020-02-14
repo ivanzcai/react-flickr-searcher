@@ -1,5 +1,5 @@
 import { call, put, takeLatest } from 'redux-saga/effects'
-import Feeds from '../services/feeds'
+import Feeds from '../Services/feeds'
 
 export function* fetchFeedsByTags(action) {
     try {

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import TopNav from './components/TopNav';
-import Search from './components/Search';
-import Cards from './components/Cards';
+import TopNav from './Components/TopNav';
+import Search from './Components/Search';
+import Cards from './Components/Cards';
 
 
 function App() {
