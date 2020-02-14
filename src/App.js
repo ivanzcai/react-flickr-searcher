@@ -1,6 +1,7 @@
 import TopNav from './Components/TopNav';
 import Search from './Components/Search';
 import Cards from './Components/Cards';
+import React from 'react';
 
 function App() {
 
