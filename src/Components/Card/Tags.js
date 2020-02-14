@@ -1,16 +1,14 @@
 import React from 'react'
 import './Tags.css'
-import { useDispatch } from 'react-redux'
 
 
-
+//Todo: as a feature with more time, it would be good to make the tags clickable
 function Tags({ tags }) {
-    const dispatch = useDispatch();
     return (
         <div className="tags">
             {
                 tags && tags.map(tag => {
-                    return (<button type="button" key={tag} onClick={(e) => { dispatch({ type: "ADD_SELECTED_TAG", payload: tag }) }} className="btn btn-outline-info btn-sm">{tag}</button>)
+                    return (<button type="button" className="disable" key={tag} className="btn btn-outline-info btn-sm">{tag}</button>)
                 })
             }
         </div>
