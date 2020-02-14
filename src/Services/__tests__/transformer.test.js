@@ -29,7 +29,7 @@ const inputData = [
         date_taken: "2020-01-25T16:22:29-08:00",
         description: " ",
         published: "2020-02-13T09:58:00Z",
-        author: "ivan",
+        author: "nobody@flickr.com (\"ivan\")",
         author_id: "16230743@N06",
         tags: "sea beach sun bondi"
     },
@@ -42,7 +42,7 @@ const inputData = [
         date_taken: "2020-02-25T16:22:29-08:00",
         description: " ",
         published: "2020-02-13T09:58:00Z",
-        author: "john",
+        author: "nobody@flickr.com (\"john\")",
         author_id: "16230743@N06",
         tags: "moon bat dark"
     },

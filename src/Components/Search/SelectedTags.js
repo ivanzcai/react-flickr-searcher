@@ -7,7 +7,7 @@ function SelectedTags({ selectedTags }) {
             <h2>
                 {
                     selectedTags && selectedTags.map(tag => {
-                        return (<span key={tag} class="badge badge-pill badge-light">{tag}</span>)
+                        return (<span key={tag} className="badge badge-pill badge-light">{tag}</span>)
 
                     })
                 }

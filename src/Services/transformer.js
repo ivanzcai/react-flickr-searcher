@@ -16,7 +16,7 @@ export function transformItem(item) {
 
     result.thumbnail_link = item.media.m;
     result.full_image_link = item.link;
-    result.details.author = item.author;
+    result.details.author = extractName(item.author);
     result.details.date = item.date_taken.substring(0, 10)
     result.tags = item.tags.split(" ");
     if (result.tags[0] === "") {
@@ -26,3 +26,14 @@ export function transformItem(item) {
 
 
 }
+
+function extractName(str) {
+    let name = ""
+    if (str.length > 0) {
+        let regx2 = /\(\".*?\"\)/;
+        name = regx2.exec(str)[0];
+        name = name.substr(2, name.length - 4); // removing the bracket and double qoutes
+    }
+    return name;
+}
+//mystring = mystring.replace('/r','/');

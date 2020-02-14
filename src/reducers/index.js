@@ -1,6 +1,6 @@
 import { transformer } from '../Services/transformer'
 const initState = {
-    searchStr: "",
+    selectedTags: [],
     cardItems: ""
 };
 
@@ -18,6 +18,12 @@ export default function (state = initState, action) {
 
         case "SEARCH_FAILED":
             return { ...state, cardItems: results };
+
+        case "UPDATE_SELECTED_TAGS":
+            let tagsStr = action.payload.replace(/[ ,;]+/g, ",");
+            let tagArray = tagsStr.split(",");
+
+            return { ...state, selectedTags: tagArray };
 
         default:
             return state;
