@@ -1,5 +1,6 @@
 import { transformer } from '../Services/transformer'
 const initState = {
+    searchStr: "",
     cardItems: ""
 };
 

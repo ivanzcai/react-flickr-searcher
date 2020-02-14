@@ -19,7 +19,9 @@ export function transformItem(item) {
     result.details.author = item.author;
     result.details.date = item.date_taken.substring(0, 10)
     result.tags = item.tags.split(" ");
-
+    if (result.tags[0] === "") {
+        result.tags.shift();
+    }
     return result;
 
 
