@@ -21,9 +21,15 @@ export default function (state = initState, action) {
 
         case "UPDATE_SELECTED_TAGS":
             let tagsStr = action.payload.replace(/[ ,;]+/g, ",");
-            let tagArray = tagsStr.split(",");
-
+            let tagArray = [...new Set(tagsStr.split(","))];
             return { ...state, selectedTags: tagArray };
+
+        case "ADD_SELECTED_TAG":
+            let tag = action.payload;
+            let newTags = [...state.selectedTags, tag];
+            let uniqueTags = [...new Set(newTags)];
+            return { ...state, selectedTags: [...uniqueTags] };
+
 
         default:
             return state;

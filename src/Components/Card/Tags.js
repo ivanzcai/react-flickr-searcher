@@ -10,7 +10,7 @@ function Tags({ tags }) {
         <div className="tags">
             {
                 tags && tags.map(tag => {
-                    return (<button type="button" key={tag} onClick={(e) => { dispatch({ type: "ADD_TAG", payload: tag }) }} className="btn btn-outline-info btn-sm">{tag}</button>)
+                    return (<button type="button" key={tag} onClick={(e) => { dispatch({ type: "ADD_SELECTED_TAG", payload: tag }) }} className="btn btn-outline-info btn-sm">{tag}</button>)
                 })
             }
         </div>

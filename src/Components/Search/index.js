@@ -12,7 +12,7 @@ export function Search({ selectedTags }) {
 
         <section className="jumbotron text-center search">
             <div className="container">
-                <input name="search" className="form-control form-control-lg" type="text" placeholder="beach, sky, water" onChange={(e) => { dispatch({ type: "SEARCH", payload: e.target.value }) }} />
+                <input name="search" className="form-control form-control-lg" type="text" placeholder="Search images here" onChange={(e) => { dispatch({ type: "SEARCH", payload: e.target.value }) }} />
                 <SelectedTags selectedTags={selectedTags} />
             </div>
         </section>
