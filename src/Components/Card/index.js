@@ -5,7 +5,6 @@ import Tags from './Tags';
 
 
 function Card({ cardInfo, index }) {
-    console.log("cardInfo", cardInfo);
     const { thumbnail_link, details, tags, full_image_link } = { ...cardInfo };
     return (
         <div className="col-md-4">
