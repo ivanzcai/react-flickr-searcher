@@ -1,3 +1,6 @@
 .tags {
     padding-bottom: 1rem;
 }
+.tags button{
+    margin: 1px;
+}
